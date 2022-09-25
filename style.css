@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&family=Source+Code+Pro:wght@300;400;500;700&display=swap');*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* .link:hover{
+    color: #d17e3a;
+    background-color: blue;
+} */
+.nav-bar{
+    box-shadow: 0 15px 40px -20px rgba(40, 44, 63, .15);
+    position: fixed;
+    /* Offsets for the position */
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 80px;
+    background-color: whitesmoke;
+    z-index: 1000;
+    padding: 0px 20px;
+}
+/* Combinator selector */
+.nav-bar .nav{
+    max-width: 1200px;
+    min-width: 600px;
+    position: relative;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: space-between;
+}
+.nav .left-nav{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+.left-nav .logo{
+    display: block;
+    height: auto;
+    margin-right: 15px;
+}
+.left-nav .others{
+    display: flex;
+    align-items: center;
+    height: auto;
+    margin-left: 15px;
+}
+.others span{
+    margin-left: 15px;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.right-nav{
+display: block;
+position: relative;
+/* height: auto; */
+}
+.right-nav .items{
+    display: flex;
+    align-items: center;
+    height: auto;
+    margin-left: 15px;
+}
+.right-nav .items li{
+    list-style-type: none;
+    margin-right: 15px;
+    cursor: pointer;
+    /* height: 80px; */
+}
+.nav-item{
+    /* Below line brought items to center */
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 80px;
+}
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+.content-section{
+    background-color: rgb(240, 244, 247);
+}
+.resturants .container{
+    max-width: 1200px;
+    min-width: 600px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 100px;
+}
+.item-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.number{
+    font-weight: 600;
+    font-size: 28px;
+}
